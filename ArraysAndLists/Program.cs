@@ -43,24 +43,19 @@ namespace ArraysAndLists
              *
              * Try to be creative in your display
              */
-            foreach (var num in numbers)
-                if(num == evens)
-                {
-                    Console.WriteLine("All of these numbers are even!");
-                }
-                else
-                {
-                    Console.WriteLine("All of these numbers are not even!");
-                }
-            foreach (var num in numbers)
-                if (num == odds)
-                {
-                    Console.WriteLine("All of these numbers are odd!");
-                }
-                else
-                {
-                    Console.WriteLine("All of these numbers are not odd!");
-                }
+            Console.WriteLine($"All of these numbers are even!");
+
+            foreach (var num in evens) 
+            {
+                Console.WriteLine($"{num}");
+            }
+
+            Console.WriteLine($"All of these numbers are odd!");
+
+            foreach (var num in odds)
+            {
+                Console.WriteLine($"{num}");
+            }
         }
     }
 }
